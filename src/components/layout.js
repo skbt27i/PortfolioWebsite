@@ -5,44 +5,47 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from 'react';
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import 'font-awesome/css/font-awesome.min.css';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  const [display, setDisplay] = useState(0);
 
+  
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header  />
+
       <div
+      id ='test1'
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
+          
+
         <main>{children}</main>
+        
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+       <div className="arrow bounce">
+          <a className="fa fa-chevron-down fa-4x"  href="javascript:void(0)" onClick={() => scrollTo('#test2')}></a>
+        </div>
         </footer>
+      </div>
+
+      <div id ='test2' className="section2"> 
+      <font face= "Sacramento"> Section 2</font>
       </div>
     </>
   )
 }
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
