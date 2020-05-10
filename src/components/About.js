@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
       padding: theme.spacing(2),
-      textAlign: 'center',
-      color: theme.palette.text.secondary,
+      height: '600px',
+
     },
   }));
 
@@ -35,6 +35,7 @@ const About= (props) => {
   alignItems="baseline">
 
         <Grid item xs={3}>
+          <Paper className = {classes.paper}>
           <Typography variant="h5" gutterBottom align ="center">
            <u>About</u> 
             </Typography>
@@ -55,8 +56,11 @@ const About= (props) => {
             <h8> • Video games </h8>
 
             </Typography>
+            </Paper>
         </Grid>
         <Grid item xs={3}>
+        <Paper className = {classes.paper}>
+
           <Typography variant="h5" gutterBottom align ="center">
          <u>Skills &amp; Technologies</u>  
             </Typography>
@@ -79,8 +83,11 @@ const About= (props) => {
         <img src ={ogl} width="40" height="22"/>
     </li>
            </ul>
+           </Paper>
         </Grid>
         <Grid item xs={3}>
+        <Paper className = {classes.paper}>
+
           <Typography variant="h5" gutterBottom align="center">
           <u>Experience</u>  
         </Typography>
@@ -93,6 +100,7 @@ const About= (props) => {
     CNH Industrial Software Engineering Intern (Cancelled due to Coronavirus)
 </li>
        </ul>
+       </Paper>
         </Grid>
     </Grid>
 

@@ -12,6 +12,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 article,
 aside,
@@ -657,6 +658,7 @@ pre tt:after {
   padding-top: 50px;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: lightskyblue;
 
 }
 
