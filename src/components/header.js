@@ -12,6 +12,7 @@ import Container from '@material-ui/core/Container';
 import Slide from '@material-ui/core/Slide';
 import Button from '@material-ui/core/Button';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import Grid from '@material-ui/core/Grid';
 
 
 function  HideOnScroll(props) {
@@ -59,12 +60,15 @@ export default function Header(props) {
     <AppBar>
       <Toolbar>
         <Button color="inherit" onClick={() => scrollTo('#begin')}>
-        <Typography variant="h6">Santosh Tirumala</Typography>
+        <Typography variant="h8" style={{display: 'inline-block'}} >Home</Typography>
         </Button>
+        <Grid container alignItems="flex-start" justify="flex-end" direction="row">
+
         <Button color="inherit" onClick={() => scrollTo('#test2')}>About</Button>
         <Button color="inherit" onClick={() => scrollTo('#test2')}>Projects</Button>
         <Button color="inherit" onClick={() => scrollTo('#test2')}>Resume</Button>
         <Button color="inherit" onClick={() => scrollTo('#test2')}>Blog</Button>
+        </Grid>
 
 
       </Toolbar>

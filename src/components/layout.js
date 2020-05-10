@@ -12,9 +12,9 @@ import 'font-awesome/css/font-awesome.min.css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Header from "./header"
 import "./layout.css"
+import About from "./About"
 
 const Layout = ({ children }) => {
-  const [display, setDisplay] = useState(0);
 
   
   return (
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
       </div>
 
       <div id ='test2' className="section2"> 
-      <font face= "Sacramento"> Section 2</font>
+      <About />
       </div>
     </>
   )
