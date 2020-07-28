@@ -5,7 +5,8 @@ import "./layout.css"
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-i
+import { Document, Page } from 'react-pdf';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,11 +27,11 @@ const Resume= (props) => {
     return (
     <div className={classes.root}>
      Resume
-     <ReactPDF
-      file={{
-        url: 'TODO'
-      }}
-    />
+      <Document
+        file="TODO"
+      >
+      </Document>
+    
     </div>
 
     );
