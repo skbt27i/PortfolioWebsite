@@ -64,10 +64,10 @@ export default function Header(props) {
         </Button>
         <Grid container alignItems="flex-start" justify="flex-end" direction="row">
 
-        <Button color="inherit" onClick={() => scrollTo('#test2')}>About</Button>
-        <Button color="inherit" onClick={() => scrollTo('#test2')}>Projects</Button>
-        <Button color="inherit" onClick={() => scrollTo('#test2')}>Resume</Button>
-        <Button color="inherit" onClick={() => scrollTo('#test2')}>Blog</Button>
+        <Button color="inherit" onClick={() => scrollTo('#About')}>About</Button>
+        <Button color="inherit" onClick={() => scrollTo('#Projects')}>Projects</Button>
+        <Button color="inherit" onClick={() => scrollTo('#Resume')}>Resume</Button>
+        <Button color="inherit" onClick={() => scrollTo('#Blog')}>Blog</Button>
         </Grid>
 
 
