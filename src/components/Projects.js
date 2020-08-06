@@ -31,11 +31,12 @@ const Project= (props) => {
   justify="space-between"
   alignItems="baseline">
 
-        <Grid item xs={3}>
+        <Grid item xs={1}>
           <Paper className = {classes.paper}>
             <Typography gutterBottom align ="cen">
             <h7><u>Projects</u> </h7>
-            <br/>
+            </Typography>
+              <Typography  gutterBottom align ="center">
             <h8>Personal Website </h8>
             <br />
             <h8>Hair Salon Website </h8>
