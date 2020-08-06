@@ -34,20 +34,19 @@ const Project= (props) => {
         <Grid item xs={1}>
           <Paper className = {classes.paper}>
             <Typography gutterBottom align ="cen">
-            <h7><u>Projects</u> </h7>
+            <u>Projects</u> 
             </Typography>
-              <Typography  gutterBottom align ="center">
-            <h8>Personal Website </h8>
+            <ul>
+            <li>Personal Website </li>
             <br />
-            <h8>Hair Salon Website </h8>
+            <li>Hair Salon Website </li>
             <br />
-            <h8>The Floating Dutchman Python Game </h8>
+            <li>The Floating Dutchman Python Game </li>
             <br />
-            <h8> Linear Regression Grapher </h8>
+            <li> Linear Regression Grapher </li>
             <br />
-            <h8> Face Project </h8>
-
-            </Typography>
+            <li> Face Project </li>
+            </ul>
             </Paper>
         </Grid>
 
