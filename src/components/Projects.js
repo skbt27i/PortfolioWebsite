@@ -5,7 +5,10 @@ import "./layout.css"
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,7 +19,9 @@ const useStyles = makeStyles((theme) => ({
       height: '600px',
     },
   }));
-
+  function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+  }
   
 const Projects= (props) => {
     const classes = useStyles();
@@ -35,17 +40,24 @@ const Projects= (props) => {
           <Typography variant="h5" gutterBottom align ="center">
            <u>Projects</u> 
             </Typography>
-            <ul>
-            <li> <a href="https://github.com/skbt27i/skbt27i.github.io">Personal Website </a> </li>
-            <br />
-            <li>Hair Salon Website </li>
-            <br />
-            <li> <a href="https://github.com/EddieFerro/thefloatingdutchman">The Floating Dutchman Python Game</a></li>
-            <br />
-            <li><a href="https://github.com/skbt27i/JavascriptGrapher"> Linear Regression Grapher </a> </li>
-            <br />
-            <li><a href="https://github.com/skbt27i/OpenGLProjects"> OpenGL Projects </a> </li>
-            </ul>
+       
+            <List component="nav" aria-label="secondary mailbox folders">
+        <ListItemLink href="https://github.com/skbt27i/skbt27i.github.io">
+          <ListItemText primary="Personal Website" />
+        </ListItemLink>
+        <ListItem button>
+          <ListItemText primary="Hair Salon Website" />
+        </ListItem>
+        <ListItemLink href="https://github.com/EddieFerro/thefloatingdutchman">
+          <ListItemText primary="The Floating Dutchman Python Game" />
+        </ListItemLink>
+        <ListItemLink href="https://github.com/skbt27i/JavascriptGrapher">
+          <ListItemText primary="Linear Regression Grapher" />
+        </ListItemLink>
+        <ListItemLink href="https://github.com/skbt27i/OpenGLProjects">
+          <ListItemText primary="OpenGL Projects" />
+        </ListItemLink>
+      </List>
             </Paper>
         </Grid>
 
