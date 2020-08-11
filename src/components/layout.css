@@ -661,6 +661,15 @@ pre tt:after {
   background-color: lightskyblue;
 
 }
+.section3 {
+  clear:both;
+  height: 800px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: red;
+
+}
 
 .about1{
   margin-left: 15px;

@@ -13,6 +13,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import Header from "./header"
 import "./layout.css"
 import About from "./About"
+import Projects from "./Projects"
 
 const Layout = ({ children }) => {
 
@@ -34,13 +35,15 @@ const Layout = ({ children }) => {
         
         <footer>
        <div className="arrow bounce">
-          <a className="fa fa-chevron-down fa-4x"  href="javascript:void(0)" onClick={() => scrollTo('#test2')}></a>
+          <a className="fa fa-chevron-down fa-4x"  href="javascript:void(0)" onClick={() => scrollTo('#About')}></a>
         </div>
         </footer>
       </div>
-
-      <div id ='test2' className="section2"> 
+      <div id ='About' className="section2"> 
       <About />
+      </div>
+      <div id ='Projects' className="section3"> 
+      <Projects />
       </div>
     </>
   )

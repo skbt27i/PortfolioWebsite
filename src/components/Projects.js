@@ -14,12 +14,11 @@ const useStyles = makeStyles((theme) => ({
     paper: {
       padding: theme.spacing(2),
       height: '600px',
-
     },
   }));
 
   
-const Project= (props) => {
+const Projects= (props) => {
     const classes = useStyles();
 
    
@@ -31,21 +30,21 @@ const Project= (props) => {
   justify="space-between"
   alignItems="baseline">
 
-        <Grid item xs={1}>
+        <Grid item xs={12}>
           <Paper className = {classes.paper}>
-            <Typography gutterBottom align ="cen">
-            <u>Projects</u> 
+          <Typography variant="h5" gutterBottom align ="center">
+           <u>Projects</u> 
             </Typography>
             <ul>
-            <li>Personal Website </li>
+            <li> <a href="https://github.com/skbt27i/skbt27i.github.io">Personal Website </a> </li>
             <br />
             <li>Hair Salon Website </li>
             <br />
-            <li>The Floating Dutchman Python Game </li>
+            <li> <a href="https://github.com/EddieFerro/thefloatingdutchman">The Floating Dutchman Python Game</a></li>
             <br />
-            <li> Linear Regression Grapher </li>
+            <li><a href="https://github.com/skbt27i/JavascriptGrapher"> Linear Regression Grapher </a> </li>
             <br />
-            <li> Face Project </li>
+            <li><a href="https://github.com/skbt27i/OpenGLProjects"> OpenGL Projects </a> </li>
             </ul>
             </Paper>
         </Grid>
@@ -64,4 +63,4 @@ const Project= (props) => {
     );
 }
 
-export default About
+export default Projects
