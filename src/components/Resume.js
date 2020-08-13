@@ -7,11 +7,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import { Document, Page } from 'react-pdf';
 
+import file from './resume.pdf'
 
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
+
+    
     paper: {
       padding: theme.spacing(2),
       height: '600px',
@@ -26,15 +29,22 @@ const Resume= (props) => {
    
     return (
     <div className={classes.root}>
-     Resume
-      <Document
-        file="TODO"
+
+        <Typography variant="h5" gutterBottom align ="center"   >
+           <u>Resume</u> 
+        </Typography>      
+            <Document
+        file={file}
+        
       >
+        <Page pageNumber={1}
+        size="A4" style={{ backgroundColor: 'tomato' }} />
       </Document>
-    
+
+  
     </div>
 
     );
 }
 
-export default About
+export default Resume

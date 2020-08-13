@@ -14,6 +14,7 @@ import Header from "./header"
 import "./layout.css"
 import About from "./About"
 import Projects from "./Projects"
+import Resume from "./Resume"
 
 const Layout = ({ children }) => {
 
@@ -44,6 +45,9 @@ const Layout = ({ children }) => {
       </div>
       <div id ='Projects' className="section3"> 
       <Projects />
+      </div>
+      <div id ='Resume' className="section4"> 
+      <Resume />
       </div>
     </>
   )

@@ -67,7 +67,6 @@ export default function Header(props) {
         <Button color="inherit" onClick={() => scrollTo('#About')}>About</Button>
         <Button color="inherit" onClick={() => scrollTo('#Projects')}>Projects</Button>
         <Button color="inherit" onClick={() => scrollTo('#Resume')}>Resume</Button>
-        <Button color="inherit" onClick={() => scrollTo('#Blog')}>Blog</Button>
         </Grid>
 
 
