@@ -13,17 +13,14 @@ import file from './resume.pdf'
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
+
       '& > *': {
         margin: theme.spacing(1),
       }
     },
 
     
-    paper: {
-      padding: theme.spacing(2),
-      height: '600px',
 
-    },
   }));
 
   
@@ -33,22 +30,25 @@ const Resume= (props) => {
    
     return (
     <div className={classes.root}>
-
         <Typography variant="h5" gutterBottom align ="center"   >
            <u>Resume</u> 
         </Typography>
-        <Button variant="outlined"><a href="https://skbt27i.github.io/resume.pdf" target = "_blank" >Download Resume</a></Button>
-      
+        <Grid container justify = "center">
+
+        <Button variant="outlined"  color="primary" style={{justifyContent: 'center'}}> <a href="https://skbt27i.github.io/resume.pdf" target = "_blank" >Download Resume</a></Button>
+        </Grid>
+
+<Grid container justify = "center">
+
             <Document
         file={file}
         
       >
         <Page pageNumber={1}
-        size="A4" style={{ backgroundColor: 'tomato' }} />
+      
+          />
       </Document>
-
-
-  
+</Grid>
     </div>
 
     );
