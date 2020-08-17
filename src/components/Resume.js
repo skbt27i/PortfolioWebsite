@@ -30,13 +30,23 @@ const Resume= (props) => {
    
     return (
     <div className={classes.root}>
+        <Paper className = {classes.paper} width="20%">
+
         <Typography variant="h5" gutterBottom align ="center"   >
+
            <u>Resume</u> 
+
         </Typography>
+        </Paper>
+
         <Grid container justify = "center">
+        <Paper className = {classes.paper} width="20%">
 
         <Button variant="outlined"  color="primary" style={{justifyContent: 'center'}}> <a href="https://skbt27i.github.io/resume.pdf" target = "_blank" >Download Resume</a></Button>
+        </Paper>
+
         </Grid>
+
 
 <Grid container justify = "center">
 
