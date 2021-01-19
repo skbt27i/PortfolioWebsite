@@ -10,7 +10,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>
-      <font face = "Jost">Hi, I'm Santosh Tirumala </font>
+      <font face = "Jost">Under Construction (Will be adding links to social media soon!)</font>
         </h1>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`
  }}>
