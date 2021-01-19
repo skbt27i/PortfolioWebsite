@@ -42,21 +42,23 @@ const Projects= (props) => {
             </Typography>
        
             <List component="nav" aria-label="secondary mailbox folders">
-        <ListItemLink href="https://github.com/skbt27i/skbt27i.github.io">
+	<ListItem button component="a" href="https://github.com/skbt27i/skbt27i.github.io">
           <ListItemText primary="Personal Website" />
-        </ListItemLink>
+	</ListItem>
         <ListItem button>
           <ListItemText primary="Hair Salon Website" />
         </ListItem>
-        <ListItemLink href="https://github.com/EddieFerro/thefloatingdutchman">
+        <ListItem button component="a" href="https://github.com/EddieFerro/thefloatingdutchman">
           <ListItemText primary="The Floating Dutchman Python Game" />
-        </ListItemLink>
-        <ListItemLink href="https://github.com/skbt27i/JavascriptGrapher">
+	</ListItem>
+        <ListItem button component="a" href="https://github.com/skbt27i/JavascriptGrapher">
           <ListItemText primary="Linear Regression Grapher" />
-        </ListItemLink>
-        <ListItemLink href="https://github.com/skbt27i/OpenGLProjects">
+	</ListItem>
+	<ListItem button component="a"  href="https://github.com/skbt27i/OpenGLProjects">
+        
           <ListItemText primary="OpenGL Projects" />
-        </ListItemLink>
+       
+</ListItem>
       </List>
             </Paper>
         </Grid>
