@@ -45,7 +45,7 @@ const Projects= (props) => {
 	<ListItem button component="a" href="https://github.com/skbt27i/skbt27i.github.io">
           <ListItemText primary="Personal Website" />
 	</ListItem>
-        <ListItem button>
+        <ListItem button component="a" href="https://attractionssalont.herokuapp.com/Home">
           <ListItemText primary="Hair Salon Website" />
         </ListItem>
         <ListItem button component="a" href="https://github.com/EddieFerro/thefloatingdutchman">
