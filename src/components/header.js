@@ -13,7 +13,9 @@ import Slide from '@material-ui/core/Slide';
 import Button from '@material-ui/core/Button';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Grid from '@material-ui/core/Grid';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 function  HideOnScroll(props) {
   const { children, window } = props;
@@ -37,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-  },
+  }
 }));
 
 
@@ -59,11 +61,44 @@ export default function Header(props) {
   <HideOnScroll {...props}>
     <AppBar>
       <Toolbar>
+
         <Button color="inherit" onClick={() => scrollTo('#begin')}>
         <Typography variant="h8" style={{display: 'inline-block'}} >Home</Typography>
         </Button>
-        <Grid container alignItems="flex-start" justify="flex-end" direction="row">
 
+
+    <Grid container justify="space-evenly" direction="row">
+<Button 
+   variant="link"
+   
+    className={classes.root}
+
+   startIcon={<GitHubIcon />}
+   href="https://github.com/skbt27i"
+>
+</Button>
+<Button 
+   variant="link"
+   
+    className={classes.root}
+
+   startIcon={<LinkedInIcon />}
+   href="https://www.linkedin.com/in/santoshkrishna-tirumala/"
+>
+</Button>
+<Button 
+   variant="link"
+   
+    className={classes.root}
+
+   startIcon={<MailOutlineIcon />}
+   href="mailto:skbt27i@gmail.com"
+>
+</Button>
+    
+    </Grid>
+
+        <Grid container alignItems="flex-start" justify="flex-end" direction="row">
         <Button color="inherit" onClick={() => scrollTo('#About')}>About</Button>
         <Button color="inherit" onClick={() => scrollTo('#Projects')}>Projects</Button>
         <Button color="inherit" onClick={() => scrollTo('#Resume')}>Resume</Button>
