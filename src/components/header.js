@@ -71,7 +71,7 @@ export default function Header(props) {
 <Button 
    variant="link"
    
-    className={classes.root}
+ 
 
    startIcon={<GitHubIcon />}
    href="https://github.com/skbt27i"
@@ -80,7 +80,7 @@ export default function Header(props) {
 <Button 
    variant="link"
    
-    className={classes.root}
+    
 
    startIcon={<LinkedInIcon />}
    href="https://www.linkedin.com/in/santoshkrishna-tirumala/"
@@ -89,7 +89,7 @@ export default function Header(props) {
 <Button 
    variant="link"
    
-    className={classes.root}
+    
 
    startIcon={<MailOutlineIcon />}
    href="mailto:skbt27i@gmail.com"
