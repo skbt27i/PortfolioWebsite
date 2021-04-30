@@ -66,21 +66,26 @@ const About= (props) => {
             </Typography>
             <ul>
 
-    <li>Java
-        <img src={java}  width="22" height="22" />
-    </li>
-    <li>C++
-        <img src={cee} width="22" height="22"/>
-    </li>
-    <li>JavaScript
-        <img src={js} width="22" height="22"/>
-    </li>
-    <li>Python
-        <img src={py} width="22" height="22"/>
+    <li>
+       <img src={java}  width="22" height="22" />
+        Java
     </li>
     <li>
-        OpenGL
+       <img src={cee} width="22" height="22"/>
+       C++
+    </li>
+    <li>
+       <img src={js} width="22" height="22"/>
+        JavaScript
+    </li>
+    <li>
+            <img src={py} width="22" height="22"/>
+           Python
+    </li>
+    <li>
         <img src ={ogl} width="40" height="22"/>
+
+        OpenGL
     </li>
            </ul>
            </Paper>
