@@ -4,16 +4,21 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Particles from 'react-particles-js';
+import particlesConfig from "configParticles";
 
 const IndexPage = () => (
   <div id="begin">
+  <div style={{ position: 'absolute'}}>
+        <Particles height="100vh" width="100vw" params={particlesConfig} />
+  </div>
+
   <Layout>
     <SEO title="Home" />
     <h1>
       <font face = "Jost">Under Construction</font>
         </h1>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`
- }}>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`}}>
       <Image />
      <h1>
       Not friendly to all resolutions/mobile yet
