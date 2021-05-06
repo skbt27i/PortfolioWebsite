@@ -5,12 +5,11 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Particles from 'react-particles-js';
-import particlesConfig from "configParticles";
 
 const IndexPage = () => (
   <div id="begin">
   <div style={{ position: 'absolute'}}>
-        <Particles height="100vh" width="100vw" params={particlesConfig} />
+        <Particles height="100vh" width="100vw"  />
   </div>
 
   <Layout>
