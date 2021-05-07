@@ -39,7 +39,14 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-  }
+  },
+  hov: {
+    '&:hover': {
+      cursor: 'pointer',
+
+    color: 'black'
+    },
+  },
 }));
 
 
@@ -68,33 +75,17 @@ export default function Header(props) {
 
 
     <Grid container justify="space-evenly" direction="row">
-<Button 
-   variant="link"
-   
- 
+    <GitHubIcon onClick={() =>  window.location.href="https://github.com/skbt27i"}
+    className={classes.hov}
+ />
 
-   startIcon={<GitHubIcon />}
-   href="https://github.com/skbt27i"
->
-</Button>
-<Button 
-   variant="link"
-   
-    
+<LinkedInIcon onClick={() =>  window.location.href="https://www.linkedin.com/in/santoshkrishna-tirumala/"}
+    className={classes.hov}/>
 
-   startIcon={<LinkedInIcon />}
-   href="https://www.linkedin.com/in/santoshkrishna-tirumala/"
->
-</Button>
-<Button 
-   variant="link"
-   
-    
+<MailOutlineIcon 
+onClick={() =>  window.location.href="https://www.linkedin.com/in/santoshkrishna-tirumala/"}
+className={classes.hov}/>
 
-   startIcon={<MailOutlineIcon />}
-   href="mailto:skbt27i@gmail.com"
->
-</Button>
     
     </Grid>
 
