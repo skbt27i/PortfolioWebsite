@@ -86,7 +86,7 @@ export default function Header(props) {
     className={classes.hov}/>
 
 <MailOutlineIcon style={{ fill: '#000000' }}
-onClick={() =>  window.location.href="https://www.linkedin.com/in/santoshkrishna-tirumala/"}
+onClick={() =>  window.location.href="mailto:skbt27i@gmail.com"}
 className={classes.hov}/>
 
     
