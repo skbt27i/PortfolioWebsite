@@ -13,7 +13,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>
-      <font face = "Jost">Under Construction -       Not friendly to all resolutions/mobile yet
+      <font face = "Jost">Santosh Tirumala-       Not friendly to all resolutions/mobile yet
 </font>
         </h1>
         <Particles

@@ -40,9 +40,7 @@ const About= (props) => {
            <u>About</u> 
             </Typography>
             <Typography  gutterBottom align ="cen" marginRight = "800px">
-            <p> Hi! My name is Santosh Tirumala and I am a rising third year Computer Science (B.S) student at the University of Florida.  </p>
-            <p> One of my favorite things to do at the university is play table tennis every Friday night.</p>
-            <p>I love programming, especially graphics, and am looking forward to learning more!</p>
+            <p> Hi! My name is Santosh Tirumala and I am a rising fourth year Computer Science (B.S) student at the University of Florida.  </p>
             <h7><u>Interests</u> </h7>
             <br/>
             <h8> • Computer graphics </h8>
@@ -54,19 +52,22 @@ const About= (props) => {
             <h8> • Guitar </h8>
             <br />
             <h8> • Video games </h8>
+            <br />
+            <h8> • Table tennis </h8>
 
             </Typography>
             </Paper>
         </Grid>
+
         <Grid item xs={3}>
         <Paper className = {classes.paper}>
 
           <Typography variant="h5" gutterBottom align ="center">
-         <u>Skills &amp; Technologies</u>  
+          <u>Skills &amp; Technologies</u>  
             </Typography>
             <ul>
 
-    <li>
+        <li>
        <img src={java}  width="22" height="22" />
         Java
     </li>
@@ -87,7 +88,7 @@ const About= (props) => {
 
         OpenGL
     </li>
-           </ul>
+    </ul>
            </Paper>
         </Grid>
         <Grid item xs={3}>
@@ -98,12 +99,13 @@ const About= (props) => {
         </Typography>
         <ul>
 
+    <li>
+    Amazon SDE Intern
+</li>
 <li>
     UF University Scholar
 </li>
-<li>
-    CNH Industrial Software Engineering Intern (Cancelled due to Coronavirus)
-</li>
+
        </ul>
        </Paper>
         </Grid>
@@ -112,8 +114,7 @@ const About= (props) => {
             
             
             
-           
-           
+    
           
             </div>
 

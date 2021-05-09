@@ -43,9 +43,7 @@ const useStyles = makeStyles((theme) => ({
   hov: {
     '&:hover': {
       cursor: 'pointer',
-
-    color: 'black'
-    },
+        },
   },
 }));
 
@@ -75,14 +73,14 @@ export default function Header(props) {
 
 
     <Grid container justify="space-evenly" direction="row">
-    <GitHubIcon onClick={() =>  window.location.href="https://github.com/skbt27i"}
+    <GitHubIcon style={{ fill: '#000000' }} onClick={() =>  window.location.href="https://github.com/skbt27i"}
     className={classes.hov}
  />
 
-<LinkedInIcon onClick={() =>  window.location.href="https://www.linkedin.com/in/santoshkrishna-tirumala/"}
+<LinkedInIcon style={{ fill: '#000000' }} onClick={() =>  window.location.href="https://www.linkedin.com/in/santoshkrishna-tirumala/"}
     className={classes.hov}/>
 
-<MailOutlineIcon 
+<MailOutlineIcon style={{ fill: '#000000' }}
 onClick={() =>  window.location.href="https://www.linkedin.com/in/santoshkrishna-tirumala/"}
 className={classes.hov}/>
 
