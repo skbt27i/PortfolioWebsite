@@ -41,14 +41,14 @@ const About= (props) => {
   justify="space-between"
   alignItems="baseline">
 
-        <Grid item xs={3}>
+        <Grid item xs={4}>
           <Paper className = {classes.paper}>
           <Typography variant="h5" gutterBottom align ="center">
            <u>About</u> 
             </Typography>
 
             <Typography  gutterBottom align ="cen" marginRight = "800px">
-            <p> Hi! My name is Santosh Tirumala  </p>
+            <p> Hi! My name is Santosh Tirumala.  </p>
             <h7><u>Interests</u> </h7>
             <br/>
             <h8> • Computer graphics </h8>
@@ -67,7 +67,7 @@ const About= (props) => {
             </Paper>
         </Grid>
 
-        <Grid item xs={3}>
+        <Grid item xs={4}>
         <Paper className = {classes.paper}>
 
           <Typography variant="h5" gutterBottom align ="center">
@@ -99,7 +99,7 @@ const About= (props) => {
     </ul>
            </Paper>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={4}>
         <Paper className = {classes.paper}>
 
           <Typography variant="h5" gutterBottom align="center">
