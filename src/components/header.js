@@ -16,6 +16,7 @@ import Grid from '@material-ui/core/Grid';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 function  HideOnScroll(props) {
   const { children, window } = props;
@@ -30,6 +31,9 @@ function  HideOnScroll(props) {
     </Slide>
   );
 }
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -46,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
         },
   },
 }));
+
 
 
 HideOnScroll.propTypes = {

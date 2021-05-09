@@ -9,6 +9,10 @@ import js from './js.png';
 import cee from './c.png';
 import py from './py.png';
 import ogl from './ogl.png';
+import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
+
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,11 +27,14 @@ const useStyles = makeStyles((theme) => ({
 
   
 const About= (props) => {
+
     const classes = useStyles();
 
    
     return (
     <div className={classes.root}>
+                  <ThemeProvider theme={theme}>
+
     <Grid container spacing={0} 
   container
   direction="row"
@@ -39,8 +46,9 @@ const About= (props) => {
           <Typography variant="h5" gutterBottom align ="center">
            <u>About</u> 
             </Typography>
+
             <Typography  gutterBottom align ="cen" marginRight = "800px">
-            <p> Hi! My name is Santosh Tirumala and I am a rising fourth year Computer Science (B.S) student at the University of Florida.  </p>
+            <p> Hi! My name is Santosh Tirumala  </p>
             <h7><u>Interests</u> </h7>
             <br/>
             <h8> • Computer graphics </h8>
@@ -114,7 +122,7 @@ const About= (props) => {
             
             
             
-    
+    </ThemeProvider>
           
             </div>
 
