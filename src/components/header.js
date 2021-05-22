@@ -53,10 +53,6 @@ const useStyles = makeStyles((theme) => ({
 
 HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
-<<<<<<< HEAD
-
-=======
->>>>>>> 5dc5801a72f985f45e9374037ca5974d40315289
   window: PropTypes.func,
 };
 
