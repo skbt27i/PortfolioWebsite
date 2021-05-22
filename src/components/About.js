@@ -10,6 +10,7 @@ import cee from './c.png';
 import py from './py.png';
 import ogl from './ogl.png';
 import { createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
+import Divider from '@material-ui/core/Divider';
 
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
@@ -41,7 +42,7 @@ const About= (props) => {
   justify="space-between"
   alignItems="baseline">
 
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Paper className = {classes.paper}>
           <Typography variant="h5" gutterBottom align ="center">
            <u>About</u> 
@@ -66,8 +67,10 @@ const About= (props) => {
             </Typography>
             </Paper>
         </Grid>
+        <Divider orientation="vertical" flexItem />
 
-        <Grid item xs={4}>
+        <Grid item xs={3}>
+
         <Paper className = {classes.paper}>
 
           <Typography variant="h5" gutterBottom align ="center">
@@ -99,7 +102,9 @@ const About= (props) => {
     </ul>
            </Paper>
         </Grid>
-        <Grid item xs={4}>
+        <Divider orientation="vertical" flexItem />
+
+        <Grid item xs={3}>
         <Paper className = {classes.paper}>
 
           <Typography variant="h5" gutterBottom align="center">

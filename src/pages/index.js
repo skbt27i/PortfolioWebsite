@@ -12,9 +12,10 @@ const IndexPage = () => (
 
   <Layout>
     <SEO title="Home" />
+    <br />
     <h1>
       <font face = "Jost">Santosh Tirumala</font>
-        </h1>
+    </h1>
         <Particles
   params={{
     particles: {
@@ -35,7 +36,7 @@ const IndexPage = () => (
     }
   }}
 />
-<h12>Not friendly to all resolutions/mobile yet</h12>
+<h12>Not friendly to mobile yet</h12>
 
   </Layout>
   </div>
