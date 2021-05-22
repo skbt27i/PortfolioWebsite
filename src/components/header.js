@@ -20,9 +20,7 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
 function  HideOnScroll(props) {
   const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
+
   const trigger = useScrollTrigger({ target: window ? window() : undefined });
 
   return (
@@ -55,7 +53,10 @@ const useStyles = makeStyles((theme) => ({
 
 HideOnScroll.propTypes = {
   children: PropTypes.element.isRequired,
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5dc5801a72f985f45e9374037ca5974d40315289
   window: PropTypes.func,
 };
 
@@ -83,7 +84,7 @@ export default function Header(props) {
     className={classes.hov}/>
 
 <MailOutlineIcon style={{ fill: '#000000' }}
-onClick={() =>  window.location.href="https://www.linkedin.com/in/santoshkrishna-tirumala/"}
+onClick={() =>  window.location.href="mailto:skbt27i@gmail.com"}
 className={classes.hov}/>
 
     
