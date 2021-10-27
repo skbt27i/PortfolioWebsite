@@ -36,7 +36,6 @@ const IndexPage = () => (
     }
   }}
 />
-<h12>Not friendly to mobile yet</h12>
 
   </Layout>
   </div>
