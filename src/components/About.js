@@ -62,7 +62,7 @@ const About= (props) => {
             <br />
             <h8> • Video games </h8>
             <br />
-            <h8> • Table tennis </h8>
+            <h8> • Tennis </h8>
 
             </Typography>
             </Paper>
