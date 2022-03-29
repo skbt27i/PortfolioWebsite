@@ -42,35 +42,37 @@ const About = (props) => {
           justify="space-between"
           alignItems="baseline"
         >
-          <div style={{ wordBreak: "break-all" }}>
-            <Grid item xs={3}>
-              <Paper className={classes.paper}>
-                <Typography variant="h5" gutterBottom align="center">
-                  <u>About</u>
-                </Typography>
+          <Grid item xs={3}>
+            <Paper className={classes.paper}>
+              <Typography variant="h5" gutterBottom align="center">
+                <u>About</u>
+              </Typography>
 
-                <Typography gutterBottom align="cen" marginRight="800px">
-                  <p> Hi! My name is Santosh Tirumala. </p>
-                  <h7>
-                    <u>Interests</u>{" "}
-                  </h7>
+              <Typography gutterBottom align="cen" marginRight="800px">
+                <p> Hi! My name is Santosh Tirumala. </p>
+                <h7>
+                  <u>Interests</u>{" "}
+                </h7>
+                <div style={{ wordBreak: "break-all" }}>
                   <br />
                   <h8> • Computer graphics </h8>
                   <br />
                   <h8> • Open Source </h8>
                   <br />
                   <h8> • Tennis </h8>
-                </Typography>
-              </Paper>
-            </Grid>
+                </div>
+              </Typography>
+            </Paper>
+          </Grid>
 
-            <Divider orientation="vertical" flexItem />
+          <Divider orientation="vertical" flexItem />
 
-            <Grid item xs={3}>
-              <Paper className={classes.paper}>
-                <Typography variant="h5" gutterBottom align="center">
-                  <u>Skills &amp; Technologies</u>
-                </Typography>
+          <Grid item xs={3}>
+            <Paper className={classes.paper}>
+              <Typography variant="h5" gutterBottom align="center">
+                <u>Skills &amp; Technologies</u>
+              </Typography>
+              <div style={{ wordBreak: "break-all" }}>
                 <ul>
                   <li>
                     <img src={java} width="22" height="22" />
@@ -93,23 +95,25 @@ const About = (props) => {
                     OpenGL
                   </li>
                 </ul>
-              </Paper>
-            </Grid>
+              </div>
+            </Paper>
+          </Grid>
 
-            <Divider orientation="vertical" flexItem />
+          <Divider orientation="vertical" flexItem />
 
-            <Grid item xs={3}>
-              <Paper className={classes.paper}>
-                <Typography variant="h5" gutterBottom align="center">
-                  <u>Experience</u>
-                </Typography>
+          <Grid item xs={3}>
+            <Paper className={classes.paper}>
+              <Typography variant="h5" gutterBottom align="center">
+                <u>Experience</u>
+              </Typography>
+              <div style={{ wordBreak: "break-all" }}>
                 <ul>
                   <li>Amazon SDE Intern</li>
                   <li>UF University Scholar</li>
                 </ul>
-              </Paper>
-            </Grid>
-          </div>
+              </div>
+            </Paper>
+          </Grid>
         </Grid>
       </ThemeProvider>
     </div>
