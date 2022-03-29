@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     paper: {
-      padding: theme.spacing(2),
+      padding: theme.spacing(1),
       height: '600px',
 
     },
@@ -46,27 +46,22 @@ const About= (props) => {
           <Paper className = {classes.paper}>
           <Typography variant="h5" gutterBottom align ="center">
            <u>About</u> 
-            </Typography>
+          </Typography>
 
             <Typography  gutterBottom align ="cen" marginRight = "800px">
-            <p> Hi! My name is Santosh Tirumala.  </p>
-            <h7><u>Interests</u> </h7>
-            <br/>
-            <h8> • Computer graphics </h8>
-            <br />
-            <h8> • Open Source </h8>
-            <br />
-            <h8> • Back-end development </h8>
-            <br />
-            <h8> • Guitar </h8>
-            <br />
-            <h8> • Video games </h8>
-            <br />
-            <h8> • Tennis </h8>
+                <p> Hi! My name is Santosh Tirumala.  </p>
+                <h7><u>Interests</u> </h7>
+                <br/>
+                <h8> • Computer graphics </h8>
+                <br />
+                <h8> • Open Source </h8>
+                <br />
+                <h8> • Tennis </h8>
 
             </Typography>
             </Paper>
         </Grid>
+
         <Divider orientation="vertical" flexItem />
 
         <Grid item xs={3}>
