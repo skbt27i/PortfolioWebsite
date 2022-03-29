@@ -42,72 +42,74 @@ const About = (props) => {
           justify="space-between"
           alignItems="baseline"
         >
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>
-              <Typography variant="h5" gutterBottom align="center">
-                <u>About</u>
-              </Typography>
+          <div style={{ wordBreak: "break-all" }}>
+            <Grid item xs={3}>
+              <Paper className={classes.paper}>
+                <Typography variant="h5" gutterBottom align="center">
+                  <u>About</u>
+                </Typography>
 
-              <Typography gutterBottom align="cen" marginRight="800px">
-                <p> Hi! My name is Santosh Tirumala. </p>
-                <h7>
-                  <u>Interests</u>{" "}
-                </h7>
-                <br />
-                <h8> • Computer graphics </h8>
-                <br />
-                <h8> • Open Source </h8>
-                <br />
-                <h8> • Tennis </h8>
-              </Typography>
-            </Paper>
-          </Grid>
+                <Typography gutterBottom align="cen" marginRight="800px">
+                  <p> Hi! My name is Santosh Tirumala. </p>
+                  <h7>
+                    <u>Interests</u>{" "}
+                  </h7>
+                  <br />
+                  <h8> • Computer graphics </h8>
+                  <br />
+                  <h8> • Open Source </h8>
+                  <br />
+                  <h8> • Tennis </h8>
+                </Typography>
+              </Paper>
+            </Grid>
 
-          <Divider orientation="vertical" flexItem />
+            <Divider orientation="vertical" flexItem />
 
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>
-              <Typography variant="h5" gutterBottom align="center" >
-                <u>Skills &amp; Technologies</u>
-              </Typography>
-              <ul>
-                <li>
-                  <img src={java} width="22" height="22" />
-                  Java
-                </li>
-                <li>
-                  <img src={cee} width="22" height="22" />
-                  C++
-                </li>
-                <li>
-                  <img src={js} width="22" height="22" />
-                  JavaScript
-                </li>
-                <li>
-                  <img src={py} width="22" height="22" />
-                  Python
-                </li>
-                <li>
-                  <img src={ogl} width="40" height="22" />
-                  OpenGL
-                </li>
-              </ul>
-            </Paper>
-          </Grid>
+            <Grid item xs={3}>
+              <Paper className={classes.paper}>
+                <Typography variant="h5" gutterBottom align="center">
+                  <u>Skills &amp; Technologies</u>
+                </Typography>
+                <ul>
+                  <li>
+                    <img src={java} width="22" height="22" />
+                    Java
+                  </li>
+                  <li>
+                    <img src={cee} width="22" height="22" />
+                    C++
+                  </li>
+                  <li>
+                    <img src={js} width="22" height="22" />
+                    JavaScript
+                  </li>
+                  <li>
+                    <img src={py} width="22" height="22" />
+                    Python
+                  </li>
+                  <li>
+                    <img src={ogl} width="40" height="22" />
+                    OpenGL
+                  </li>
+                </ul>
+              </Paper>
+            </Grid>
 
-          <Divider orientation="vertical" flexItem />
+            <Divider orientation="vertical" flexItem />
 
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>
-              <Typography variant="h5" gutterBottom align="center" >
-                <u>Experience</u>
-              </Typography>
-              <ul>
-                <li>Amazon SDE Intern</li>
-                <li>UF University Scholar</li>
-              </ul>
-            </Paper>
-          </Grid>
+            <Grid item xs={3}>
+              <Paper className={classes.paper}>
+                <Typography variant="h5" gutterBottom align="center">
+                  <u>Experience</u>
+                </Typography>
+                <ul>
+                  <li>Amazon SDE Intern</li>
+                  <li>UF University Scholar</li>
+                </ul>
+              </Paper>
+            </Grid>
+          </div>
         </Grid>
       </ThemeProvider>
     </div>
