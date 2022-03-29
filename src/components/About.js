@@ -48,7 +48,7 @@ const About= (props) => {
            <u>About</u> 
           </Typography>
 
-            <Typography  gutterBottom align ="cen" marginRight = "800px">
+            <Typography  gutterBottom align ="cen" marginRight = "800px" noWrap>
                 <p> Hi! My name is Santosh Tirumala.  </p>
                 <h7><u>Interests</u> </h7>
                 <br/>
@@ -68,7 +68,7 @@ const About= (props) => {
 
         <Paper className = {classes.paper}>
 
-          <Typography variant="h5" gutterBottom align ="center">
+          <Typography variant="h5" gutterBottom align ="center" noWrap>
           <u>Skills &amp; Technologies</u>  
             </Typography>
             <ul>
@@ -102,7 +102,7 @@ const About= (props) => {
         <Grid item xs={3}>
         <Paper className = {classes.paper}>
 
-          <Typography variant="h5" gutterBottom align="center">
+          <Typography variant="h5" gutterBottom align="center" noWrap>
           <u>Experience</u>  
         </Typography>
         <ul>
