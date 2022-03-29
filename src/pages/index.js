@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Layout>
       <SEO title="Home" />
       <br />
-      <div style={{ marginTop: "10%" }}>
+      <div style={{ marginTop: "5%" }}>
         <h1>
           <font face="Jost">Santosh Tirumala</font>
         </h1>
