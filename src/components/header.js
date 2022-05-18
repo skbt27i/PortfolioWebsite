@@ -73,9 +73,7 @@ export default function Header(props) {
                 Home
               </Typography>
             </Button>
-            {mobileDetected ? (
-                <DrawerComponent />
-              ) : (
+         
             <Grid container justify="space-evenly" direction="row">
               <GitHubIcon
                 style={{ fill: "#000000" }}
@@ -103,6 +101,9 @@ export default function Header(props) {
               />
             </Grid>
 
+           {mobileDetected ? (
+                <mobile />
+              ) : (
             <Grid
               container
               alignItems="flex-start"
