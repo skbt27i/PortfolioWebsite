@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Layout>
       <SEO title="Home" />
       <br />
-      <div style={{ marginTop: "8%" }}>
+      <div>
         <h1>
           <font face="Jost">Santosh Tirumala</font>
         </h1>
@@ -22,13 +22,22 @@ const IndexPage = () => (
             color: {
               value: "#BD10E0",
             },
+            interactivity: {
+              events: {
+                onresize: {
+                  enable: true,
+                  density_auto: true,
+                  density_area: 400 
+                }
+              }
+            },
             line_linked: {
               color: {
                 value: "#000000",
               },
             },
             number: {
-              value: 50,
+              value: 20,
             },
             size: {
               value: 5,
