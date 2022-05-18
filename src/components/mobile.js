@@ -8,10 +8,12 @@ import {
   ListItemText,
  makeStyles
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+import scrollTo from "gatsby-plugin-smoothscroll";
+import MenuIcon from "@material-ui/icons/Menu";
 
 
-function DrawerComponent() {
+function Mobile() {
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <>
@@ -49,4 +51,4 @@ function DrawerComponent() {
     </>
   );
 }
-export default mobile;
+export default Mobile;

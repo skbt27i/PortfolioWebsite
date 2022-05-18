@@ -21,7 +21,7 @@ import {
   useTheme,
   useMediaQuery,
 } from "@material-ui/core";
-import mobile from "./mobile";
+import Mobile from "./mobile";
 function HideOnScroll(props) {
   const { children, window } = props;
 
@@ -102,7 +102,7 @@ export default function Header(props) {
             </Grid>
 
            {mobileDetected ? (
-                <mobile />
+                <Mobile />
               ) : (
             <Grid
               container
