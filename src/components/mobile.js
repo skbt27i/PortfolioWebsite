@@ -22,26 +22,21 @@ function Mobile() {
         onClose={() => setOpenDrawer(false)}
       >
         <List>
-         <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
+         <ListItem >
               <Button color="inherit" onClick={() => scrollTo("#About")}>
                 About
               </Button>
-            </ListItemText>
+            
           </ListItem>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
+          <ListItem >
               <Button color="inherit" onClick={() => scrollTo("#Projects")}>
                 Projects
               </Button>
-            </ListItemText>
           </ListItem>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
+          <ListItem >
               <Button color="inherit" onClick={() => scrollTo("#Resume")}>
                 Resume
               </Button>
-            </ListItemText>
           </ListItem>
         </List>
       </Drawer>
