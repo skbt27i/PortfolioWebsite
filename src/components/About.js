@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100%"
     
   },
+  stretch: { height: "100%" },
 
 }));
 
@@ -103,7 +104,7 @@ const About = (props) => {
 
           <Divider orientation="vertical" flexItem />
 
-          <Grid item xs={4} sm={4} md={4}>
+          <Grid item xs={4} sm={4} md={3}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom align="center">
                 <u>Experience</u>
@@ -111,6 +112,7 @@ const About = (props) => {
 
               <div>
                 <ul>
+
                   <li>Amazon SDE Intern</li>
                   <li>UF University Scholar</li>
                 </ul>
