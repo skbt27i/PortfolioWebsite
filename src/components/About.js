@@ -104,7 +104,7 @@ const About = (props) => {
 
           <Divider orientation="vertical" flexItem />
 
-          <Grid item xs={4} sm={4} md={3}>
+          <Grid item xs={4} sm={3} md={3}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom align="center">
                 <u>Experience</u>
