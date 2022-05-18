@@ -25,8 +25,10 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(1),
-    height: "600px",
+    height: "100%"
+    
   },
+
 }));
 
 const About = (props) => {
@@ -37,23 +39,23 @@ const About = (props) => {
       <ThemeProvider theme={theme}>
         <Grid
           container
-          spacing={0}
           direction="row"
           justify="space-between"
-          alignItems="baseline"
+          alignItems="stretch"
+          spacing={0}
         >
-          <Grid item xs={3}>
+          <Grid item xs={3} sm={4} md={4}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom align="center">
                 <u>About</u>
               </Typography>
 
-              <Typography gutterBottom align="cen" marginRight="800px">
+              <Typography gutterBottom align="cen" >
                 <p> Hi! My name is Santosh Tirumala. </p>
                 <h7>
                   <u>Interests</u>{" "}
                 </h7>
-                <div style={{ wordBreak: "break-all" }}>
+                <div>
                   <br />
                   <h8> • Computer graphics </h8>
                   <br />
@@ -67,12 +69,12 @@ const About = (props) => {
 
           <Divider orientation="vertical" flexItem />
 
-          <Grid item xs={3}>
+          <Grid item xs={4} sm={4} md={4}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom align="center">
                 <u>Skills &amp; Technologies</u>
               </Typography>
-              <div style={{ wordBreak: "break-all" }}>
+              <div>
                 <ul>
                   <li>
                     <img src={java} width="22" height="22" />
@@ -101,12 +103,13 @@ const About = (props) => {
 
           <Divider orientation="vertical" flexItem />
 
-          <Grid item xs={3}>
+          <Grid item xs={4} sm={4} md={4}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom align="center">
                 <u>Experience</u>
               </Typography>
-              <div style={{ wordBreak: "break-all" }}>
+
+              <div>
                 <ul>
                   <li>Amazon SDE Intern</li>
                   <li>UF University Scholar</li>
