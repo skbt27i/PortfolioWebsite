@@ -16,7 +16,6 @@ const IndexPage = () => (
           <font face="Jost">Santosh Tirumala</font>
         </h1>
       </div>
-      <div style={{position: 'absolute'}}>
       <Particles
         params={{
           particles: {
@@ -37,7 +36,6 @@ const IndexPage = () => (
           },
         }}
       />
-      </div>
     </Layout>
   </div>
 );
