@@ -8,7 +8,6 @@ import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { View, StyleSheet, Text, Document, Page } from '@react-pdf/renderer';
 
-import file from './resume.pdf'
 
 const useStyles = makeStyles((theme) => ({
     root: {

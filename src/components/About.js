@@ -73,7 +73,7 @@ const About = (props) => {
           <Grid item xs={4} sm={4} md={4}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom align="center">
-                <u>Skills &amp; Technologies</u>
+                <u>Skills</u>
               </Typography>
               <div>
                 <ul>
