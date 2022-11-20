@@ -19,6 +19,7 @@ import Divider from "@material-ui/core/Divider";
 let theme = createMuiTheme();
 theme = responsiveFontSizes(theme);
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -26,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(1),
     height: "100%"
-    
   },
   stretch: { height: "100%" },
 
@@ -51,18 +51,20 @@ const About = (props) => {
                 <u>About</u>
               </Typography>
 
-              <Typography gutterBottom align="cen" >
+              <Typography variant="h8">
                 <p> Hi! My name is Santosh Tirumala. </p>
                 <h7>
                   <u>Interests</u>{" "}
                 </h7>
                 <div>
                   <br />
-                  <h8> • Computer graphics </h8>
+                  Computer graphics 
                   <br />
-                  <h8> • Open Source </h8>
                   <br />
-                  <h8> • Tennis </h8>
+                  Open Source 
+                  <br />
+                  <br />
+                   Tennis 
                 </div>
               </Typography>
             </Paper>
@@ -75,30 +77,36 @@ const About = (props) => {
               <Typography variant="h5" gutterBottom align="center">
                 <u>Skills</u>
               </Typography>
-              <div>
-                <ul>
-                  <li>
+              <Typography gutterBottom align="center">
+                  <h8>
                     <img src={java} width="22" height="22" />
                     Java
-                  </li>
-                  <li>
+                  </h8>
+                  <br />
+                  <br />
+                  <h8>
                     <img src={cee} width="22" height="22" />
                     C++
-                  </li>
-                  <li>
+                  </h8>
+                  <br />
+                  <br />
+                  <h8>
                     <img src={js} width="22" height="22" />
                     JavaScript
-                  </li>
-                  <li>
+                  </h8>
+                  <br />
+                  <br />
+                  <h8>
                     <img src={py} width="22" height="22" />
                     Python
-                  </li>
-                  <li>
+                  </h8>
+                  <br />
+                  <br />
+                  <h8>
                     <img src={ogl} width="40" height="22" />
                     OpenGL
-                  </li>
-                </ul>
-              </div>
+                  </h8>
+              </Typography>
             </Paper>
           </Grid>
 
@@ -106,17 +114,16 @@ const About = (props) => {
 
           <Grid item xs={4} sm={3} md={3}>
             <Paper className={classes.paper}>
-              <Typography variant="h5" gutterBottom align="center">
-                <u>Experience</u>
+              <Typography variant="h6" gutterBottom align="center">
+              <u>Experience</u>
               </Typography>
 
-              <div>
-                <ul>
-
-                  <li>Amazon SDE Intern</li>
-                  <li>UF University Scholar</li>
-                </ul>
-              </div>
+              <Typography gutterBottom align="center">
+                  Amazon SDE1, Alexa Speech
+                  <br />
+                  <br />
+                  UF University Scholar
+                </Typography>
             </Paper>
           </Grid>
         </Grid>
