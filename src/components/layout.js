@@ -5,57 +5,56 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useState } from 'react';
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import 'font-awesome/css/font-awesome.min.css';
-import scrollTo from 'gatsby-plugin-smoothscroll';
-import Header from "./header"
-import "./layout.css"
-import About from "./About"
-import Projects from "./Projects"
-import Resume from "./Resume"
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import "font-awesome/css/font-awesome.min.css";
+import scrollTo from "gatsby-plugin-smoothscroll";
+import Header from "./header";
+import "./layout.css";
+import About from "./About";
+import Projects from "./Projects";
+import Resume from "./Resume";
 
 const Layout = ({ children }) => {
-
-  
   return (
     <>
-      <Header  />
+      <Header />
 
       <div
-      id ='test1'
+        id="test1"
         style={{
           margin: `0 auto`,
           maxWidth: 960,
         }}
       >
-          
-
         <main>{children}</main>
-        
+
         <footer>
-       <div className="arrow bounce">
-          <a className="fa fa-chevron-down fa-4x"  href="javascript:void(0)" onClick={() => scrollTo('#About')}></a>
-        </div>
+          <div className="arrow bounce">
+            <a
+              className="fa fa-chevron-down fa-4x"
+              href="javascript:void(0)"
+              onClick={() => scrollTo("#About")}
+            ></a>
+          </div>
         </footer>
       </div>
-      <div id ='About' className="section2"> 
-      <About />
+      <div id="About" className="section2">
+        <About />
       </div>
-      <div id ='Projects' className="section3"> 
-      <Projects />
+      <div id="Projects" className="section3">
+        <Projects />
       </div>
-      <div id ='Resume' className="section4"> 
-      <Resume />
+      <div id="Resume" className="section4">
+        <Resume />
       </div>
     </>
-  )
-}
-
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
