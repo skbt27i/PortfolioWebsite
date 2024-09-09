@@ -111,7 +111,7 @@ const About = () => {
                 <u>Experience</u>
               </Typography>
               <Typography variant="body1">
-                Amazon SDE1, Alexa Speech
+                Amazon SDE, Alexa Speech
                 <br />
                 UF University Scholar
               </Typography>
