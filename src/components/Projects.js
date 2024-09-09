@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Typography } from "@material-ui/core";
-import "./layout.css";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
+import React, { useState, useEffect, useRef } from "react"
+import { Typography } from "@material-ui/core"
+import "./layout.css"
+import Grid from "@material-ui/core/Grid"
+import { makeStyles } from "@material-ui/core/styles"
+import Paper from "@material-ui/core/Paper"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
@@ -17,13 +17,13 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     height: "600px",
   },
-}));
+}))
 function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
+  return <ListItem button component="a" {...props} />
 }
 
-const Projects = (props) => {
-  const classes = useStyles();
+const Projects = props => {
+  const classes = useStyles()
 
   return (
     <div className={classes.root}>
@@ -82,7 +82,7 @@ const Projects = (props) => {
         </Grid>
       </Grid>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

@@ -1,6 +1,6 @@
-import React from "react";
-import Layout from "../components/layout";
-import Particles from "react-particles-js";
+import React from "react"
+import Layout from "../components/layout"
+import Particles from "react-particles-js"
 
 const IndexPage = () => (
   <div id="begin" style={{ position: "relative", overflow: "hidden" }}>
@@ -22,9 +22,9 @@ const IndexPage = () => (
                 onresize: {
                   enable: true,
                   density_auto: true,
-                  density_area: 400 
-                }
-              }
+                  density_area: 400,
+                },
+              },
             },
             line_linked: {
               color: {
@@ -42,6 +42,6 @@ const IndexPage = () => (
       />
     </Layout>
   </div>
-);
+)
 
-export default IndexPage;
+export default IndexPage

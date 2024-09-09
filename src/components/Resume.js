@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Typography } from "@material-ui/core";
-import "./layout.css";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Button from "@material-ui/core/Button";
-import { View, StyleSheet, Text, Document, Page } from "@react-pdf/renderer";
+import React, { useState, useEffect, useRef } from "react"
+import { Typography } from "@material-ui/core"
+import "./layout.css"
+import Grid from "@material-ui/core/Grid"
+import { makeStyles } from "@material-ui/core/styles"
+import Paper from "@material-ui/core/Paper"
+import Button from "@material-ui/core/Button"
+import { View, StyleSheet, Text, Document, Page } from "@react-pdf/renderer"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
 
@@ -15,10 +15,10 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
-}));
+}))
 
-const Resume = (props) => {
-  const classes = useStyles();
+const Resume = props => {
+  const classes = useStyles()
   const styles = StyleSheet.create({
     page: {
       backgroundColor: "#FFF",
@@ -32,7 +32,7 @@ const Resume = (props) => {
       border: "1px solid #000",
       flexDirection: "row",
     },
-  });
+  })
 
   return (
     <div className={classes.root}>
@@ -63,7 +63,7 @@ const Resume = (props) => {
         ></iframe>
       </Grid>
     </div>
-  );
-};
+  )
+}
 
-export default Resume;
+export default Resume

@@ -1,40 +1,44 @@
-import React from "react";
-import { Typography } from "@material-ui/core";
-import "./layout.css";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import java from "../images/java.png";
-import js from "../images/js.png";
-import cee from "../images/c.png";
-import py from "../images/py.png";
-import ogl from "../images/ogl.png";
-import { createMuiTheme, responsiveFontSizes, ThemeProvider } from "@material-ui/core/styles";
-import Divider from "@material-ui/core/Divider";
+import React from "react"
+import { Typography } from "@material-ui/core"
+import "./layout.css"
+import Grid from "@material-ui/core/Grid"
+import { makeStyles } from "@material-ui/core/styles"
+import Paper from "@material-ui/core/Paper"
+import java from "../images/java.png"
+import js from "../images/js.png"
+import cee from "../images/c.png"
+import py from "../images/py.png"
+import ogl from "../images/ogl.png"
+import {
+  createMuiTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+} from "@material-ui/core/styles"
+import Divider from "@material-ui/core/Divider"
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
+let theme = createMuiTheme()
+theme = responsiveFontSizes(theme)
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
-    justifyContent: 'center', 
-    alignItems: 'center',   
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     flexGrow: 1,
-    minHeight: '100vh', 
-    flexDirection: 'column',
-    width: '100%', 
+    minHeight: "100vh",
+    flexDirection: "column",
+    width: "100%",
     margin: 0,
     padding: 0,
   },
   container: {
     flexGrow: 1,
-    width: '100%',
+    width: "100%",
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    height: '100%',
+    height: "100%",
   },
   image: {
     width: 24,
@@ -44,16 +48,21 @@ const useStyles = makeStyles((theme) => ({
   },
   divider: {
     margin: theme.spacing(2, 0),
-  }
-}));
+  },
+}))
 
 const About = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div className={classes.root}>
       <ThemeProvider theme={theme}>
-        <Grid container direction="column" spacing={3} className={classes.container}>
+        <Grid
+          container
+          direction="column"
+          spacing={3}
+          className={classes.container}
+        >
           <Grid item xs={12}>
             <Paper className={classes.paper}>
               <Typography variant="h5" gutterBottom>
@@ -120,7 +129,7 @@ const About = () => {
         </Grid>
       </ThemeProvider>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

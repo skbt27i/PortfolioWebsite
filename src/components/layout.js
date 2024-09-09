@@ -5,16 +5,16 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
-import "font-awesome/css/font-awesome.min.css";
-import scrollTo from "gatsby-plugin-smoothscroll";
-import Header from "./header";
-import "./layout.css";
-import About from "./About";
-import Projects from "./Projects";
-import Resume from "./Resume";
+import React, { useState } from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+import "font-awesome/css/font-awesome.min.css"
+import scrollTo from "gatsby-plugin-smoothscroll"
+import Header from "./header"
+import "./layout.css"
+import About from "./About"
+import Projects from "./Projects"
+import Resume from "./Resume"
 
 const Layout = ({ children }) => {
   return (
@@ -50,11 +50,11 @@ const Layout = ({ children }) => {
         <Resume />
       </div>
     </>
-  );
-};
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout
