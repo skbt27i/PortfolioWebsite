@@ -48,7 +48,7 @@ const Resume = props => {
             style={{ justifyContent: "center" }}
           >
             {" "}
-            <a href="https://skbt27i.github.io/resume.pdf" target="_blank">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
               Download Resume
             </a>
           </Button>
@@ -56,11 +56,7 @@ const Resume = props => {
       </Grid>
 
       <Grid container justify="center">
-        <iframe
-          src="https://skbt27i.github.io/resume.pdf"
-          width="80%"
-          height="700px"
-        ></iframe>
+        <iframe src="/resume.pdf" width="80%" height="700px"></iframe>
       </Grid>
     </div>
   )
