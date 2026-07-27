@@ -78,6 +78,10 @@ const About = () => {
                   <br />
                   Open Source
                   <br />
+                  AI
+                  <br />
+                  Speech models
+                  <br />
                   Tennis
                 </div>
               </Typography>

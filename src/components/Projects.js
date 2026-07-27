@@ -52,9 +52,9 @@ const Projects = props => {
               <ListItem
                 button
                 component="a"
-                href="https://attractionssalont.herokuapp.com/Home"
+                href="https://github.com/skbt27i/FocusGuard"
               >
-                <ListItemText primary="Hair Salon Website" />
+                <ListItemText primary="FocusGuard App Blocker" />
               </ListItem>
               <ListItem
                 button
